@@ -1311,3 +1311,16 @@ nav a {
   font-size: 1.05rem;
   line-height: 1.6;
 }
+.venue-highlights {
+  position: relative;
+  z-index: 1;
+  padding: 2.5rem 1.5rem;
+}
+
+.venue-highlights-inner {
+  align-items: stretch;
+}
+
+.venue-highlight {
+  min-height: 100px;
+}
