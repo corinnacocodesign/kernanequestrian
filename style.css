@@ -46,7 +46,18 @@ a { color: var(--burgundy); }
 .hero-bg { position: absolute; z-index: -3; inset: 0; background: url("assets/arena-hero.jpg") center/cover no-repeat; }
 .hero-overlay { position: absolute; z-index: -2; inset: 0; background: linear-gradient(90deg, rgba(16,5,5,.8), rgba(25,8,7,.45), rgba(16,5,5,.8)), linear-gradient(180deg, rgba(30,4,10,.5), rgba(0,0,0,.12), rgba(18,2,6,.8)); }
 .hero-content { width: min(980px, 100%); }
-.hero-logo { width: min(330px, 58vw); max-height: 145px; margin: 0 auto 1.3rem; object-fit: contain; }
+.hero-logo {
+  width: min(520px, 80vw);
+  max-height: none;
+  height: auto;
+  display: block;
+  margin: 0 auto 2rem;
+  object-fit: contain;
+
+  filter:
+    drop-shadow(0 0 18px rgba(194,155,92,.18))
+    drop-shadow(0 15px 35px rgba(0,0,0,.45));
+}
 .hero-kicker { margin: 0 0 1.1rem; color: var(--gold-light); font-size: .7rem; font-weight: 700; letter-spacing: .25em; text-transform: uppercase; }
 .hero h1 { margin: 0 auto 1.25rem; color: var(--white); font-family: var(--heading); font-size: clamp(3rem, 6.2vw, 6.1rem); font-weight: 500; line-height: .95; letter-spacing: -.02em; }
 .hero-rule { display: flex; align-items: center; justify-content: center; gap: 1rem; margin: 0 auto 1.35rem; }
