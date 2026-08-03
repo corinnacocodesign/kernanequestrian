@@ -1324,3 +1324,135 @@ nav a {
 .venue-highlight {
   min-height: 100px;
 }
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+@media (max-width: 900px) {
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  .luxury-header {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .luxury-nav-container {
+    width: calc(100% - 2rem);
+    min-height: 82px;
+  }
+
+  .luxury-logo {
+    position: relative;
+    z-index: 1002;
+  }
+
+  .luxury-logo img {
+    width: auto;
+    height: 58px;
+    max-width: 180px;
+    object-fit: contain;
+  }
+
+  .mobile-menu-button {
+    position: relative;
+    z-index: 1002;
+    display: grid;
+    width: 46px;
+    height: 42px;
+    padding: 10px;
+    border: 1px solid rgba(194, 155, 92, 0.65);
+    background: rgba(41, 5, 13, 0.9);
+    cursor: pointer;
+    place-content: center;
+    gap: 5px;
+  }
+
+  .mobile-menu-button span {
+    display: block;
+    width: 23px;
+    height: 1px;
+    background: #e0c17d;
+    transition:
+      transform 200ms ease,
+      opacity 200ms ease;
+  }
+
+  .mobile-menu-button.is-open span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .mobile-menu-button.is-open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-button.is-open span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .luxury-navigation {
+    position: fixed;
+    z-index: 1001;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    padding: 100px 2rem 2rem;
+    visibility: hidden;
+    background:
+      radial-gradient(
+        circle at 50% 0%,
+        rgba(194, 155, 92, 0.12),
+        transparent 40%
+      ),
+      rgba(41, 5, 13, 0.99);
+    opacity: 0;
+    transform: translateY(-12px);
+    transition:
+      opacity 220ms ease,
+      visibility 220ms ease,
+      transform 220ms ease;
+  }
+
+  .luxury-navigation.is-open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .luxury-navigation a {
+    width: 100%;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.55rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: none;
+  }
+
+  .luxury-navigation a::after {
+    display: none;
+  }
+
+  .luxury-navigation .nav-enquire-button {
+    width: min(280px, 100%);
+    margin: 1.25rem auto 0;
+    padding: 1rem;
+    border: 1px solid #c29b5c;
+    color: #29050d;
+    background: #c29b5c;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+}
