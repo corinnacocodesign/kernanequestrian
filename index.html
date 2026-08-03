@@ -319,5 +319,27 @@
 
   <footer><img src="assets/kernan-logo.png" alt="Kernan Equestrian Centre"><p>© 2026 Kernan Equestrian Centre</p></footer>
   <script src="script.js"></script>
+      <script>
+  const menuButton = document.querySelector(".mobile-menu-button");
+  const navigation = document.querySelector(".luxury-navigation");
+
+  if (menuButton && navigation) {
+    menuButton.addEventListener("click", () => {
+      const menuIsOpen = navigation.classList.toggle("is-open");
+
+      menuButton.setAttribute(
+        "aria-expanded",
+        String(menuIsOpen)
+      );
+    });
+
+    navigation.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navigation.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+</script>
 </body>
 </html>
