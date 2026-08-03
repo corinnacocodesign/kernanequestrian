@@ -333,44 +333,53 @@
     </section>
 
     <section id="contact" class="section contact-section">
-      <div><p class="eyebrow">Contact</p><h2>Visit Kernan Equestrian Centre</h2><p>29 Newry Road, Crossmaglen, Newry, BT35 9HH</p><p><strong>Tel:</strong> <a href="tel:+442830860512">028 3086 0512</a><br><strong>Mob:</strong> <a href="tel:+353868370376">+353 86 837 0376</a><br><strong>Email:</strong> <a href="mailto:kernan.james@gmail.com">kernan.james@gmail.com</a></p></div>
-      <div class="contact-map">
-  <iframe
-    src="https://www.google.com/maps?q=54.080579,-6.59626&z=15&output=embed"
-    width="100%"
-    height="100%"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-    title="Map showing Kernan Equestrian Centre"
-  ></iframe>
-</div>
-  </main>
 
-  <footer><img src="assets/kernan-logo.png" alt="Kernan Equestrian Centre"><p>© 2026 Kernan Equestrian Centre</p></footer>
-  <script src="script.js"></script>
-      <script>
-  const menuButton = document.querySelector(".mobile-menu-button");
-  const navigation = document.querySelector(".luxury-navigation");
+  <div class="contact-details">
+    <p class="eyebrow">Contact</p>
 
-  if (menuButton && navigation) {
-    menuButton.addEventListener("click", () => {
-      const menuIsOpen = navigation.classList.toggle("is-open");
+    <h2>Visit Kernan Equestrian Centre</h2>
 
-      menuButton.setAttribute(
-        "aria-expanded",
-        String(menuIsOpen)
-      );
-    });
+    <p>
+      29 Newry Road, Crossmaglen, Newry, BT35 9HH
+    </p>
 
-    navigation.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navigation.classList.remove("is-open");
-        menuButton.setAttribute("aria-expanded", "false");
-      });
-    });
-  }
-</script>
+    <p>
+      <strong>Tel:</strong>
+      <a href="tel:+442830860512">028 3086 0512</a>
+      <br>
+
+      <strong>Mob:</strong>
+      <a href="tel:+353868370376">+353 86 837 0376</a>
+      <br>
+
+      <strong>Email:</strong>
+      <a href="mailto:kernan.james@gmail.com">
+        kernan.james@gmail.com
+      </a>
+    </p>
+  </div>
+
+  <div class="contact-map">
+    <iframe
+      src="https://www.google.com/maps?q=54.080579,-6.59626&z=15&output=embed"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Map showing Kernan Equestrian Centre"
+    ></iframe>
+  </div>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <img
+    src="assets/kernan-logo.png"
+    alt="Kernan Equestrian Centre"
+  >
+
+  <p>© 2026 Kernan Equestrian Centre</p>
+</footer>
 </body>
 </html>
