@@ -1262,3 +1262,52 @@ nav a {
     border-bottom: 0;
   }
 }
+/* =========================================
+   FIX QUICK LINKS OVERLAP
+========================================= */
+
+.quick-links {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+
+  width: min(1800px, calc(100% - 4rem));
+  margin: 0 auto;
+  padding: 3rem 0;
+
+  background: transparent;
+  transform: none;
+}
+
+.quick-links a {
+  min-height: 180px;
+  padding: 3rem 2.5rem;
+
+  border: 1px solid rgba(194, 155, 92, 0.4);
+  border-radius: 32px;
+
+  background: #faf8f3;
+  box-shadow: 0 22px 60px rgba(57, 17, 25, 0.1);
+
+  text-decoration: none;
+}
+
+.quick-links strong {
+  display: block;
+  margin-bottom: 1rem;
+
+  color: #5d1628;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.quick-links span {
+  color: #756c63;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
