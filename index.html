@@ -1,35 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
-  rel="stylesheet"
->  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kernan Equestrian Centre | Crossmaglen</title>
-  <meta name="description" content="Kernan Equestrian Centre in Crossmaglen, County Armagh. Indoor and outdoor arenas, showjumping competitions, training shows, arena hire and coaching." />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="#home"><img src="assets/kernan-logo.png" alt="Kernan Equestrian Centre logo"></a>
-    <button class="menu-toggle" aria-label="Open menu">☰</button>
-    <nav class="nav">
-      <a href="#events">Events</a><a href="#arena">Arena Hire</a><a href="#centre">The Centre</a><a href="#james">James Kernan</a><a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header class="luxury-header" id="top">
+  <div class="luxury-nav-container">
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Crossmaglen • County Armagh</p>
-        <h1>Premium showjumping, training and arena hire in the heart of County Armagh.</h1>
-        <p>A family-run equestrian centre with indoor and outdoor arenas, quality surfaces, competitive showjumping, coaching, leagues and private arena hire.</p>
-        <div class="hero-actions"><a class="btn primary" href="#events">View events</a><a class="btn secondary" href="#contact">Enquire now</a></div>
+    <a class="luxury-logo" href="#top" aria-label="Kernan Equestrian Centre home">
+      <img
+        src="assets/logo-white.png"
+        alt="Kernan Equestrian Centre"
+      >
+    </a>
+
+    <button
+      class="mobile-menu-button"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="main-navigation"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="luxury-navigation" id="main-navigation" aria-label="Main navigation">
+      <a href="#top">Home</a>
+      <a href="#events">Events</a>
+      <a href="#arena-hire">Facilities</a>
+      <a href="#centre">The Centre</a>
+      <a href="#james">James Kernan</a>
+      <a href="#contact">Contact</a>
+
+      <a class="nav-enquire-button" href="#contact">
+        Enquire
+      </a>
+    </nav>
+
+  </div>
+</header>
+
+
+<section class="luxury-hero" aria-labelledby="hero-title">
+
+  <div class="luxury-hero-background" aria-hidden="true"></div>
+  <div class="luxury-hero-overlay" aria-hidden="true"></div>
+
+  <div class="luxury-hero-content">
+
+    <img
+      class="hero-brand-mark"
+      src="assets/logo-white.png"
+      alt=""
+      aria-hidden="true"
+    >
+
+    <p class="hero-location">
+      Crossmaglen · County Armagh
+    </p>
+
+    <h1 id="hero-title">
+      Premium showjumping,<br>
+      training and arena hire
+    </h1>
+
+    <div class="hero-title-rule" aria-hidden="true">
+      <span></span>
+      <strong>Equestrian Centre</strong>
+      <span></span>
+    </div>
+
+    <p class="hero-description">
+      A family-run equestrian centre with indoor and outdoor arenas,
+      quality surfaces, competitive showjumping, coaching and private hire.
+    </p>
+
+    <div class="hero-buttons">
+      <a class="hero-button hero-button-gold" href="#events">
+        Upcoming Events
+      </a>
+
+      <a class="hero-button hero-button-outline" href="#arena-hire">
+        Arena Hire
+      </a>
+    </div>
+
+  </div>
+
+  <a class="hero-scroll" href="#venue-highlights" aria-label="Scroll to venue highlights">
+    <span>Explore</span>
+    <i aria-hidden="true"></i>
+  </a>
+
+</section>
+
+
+<section class="venue-highlights" id="venue-highlights">
+  <div class="venue-highlights-inner">
+
+    <article class="venue-highlight">
+      <div class="highlight-icon" aria-hidden="true">◇</div>
+
+      <div>
+        <h2>Premium Facilities</h2>
+        <p>Martin Collins surfaces</p>
       </div>
-    </section>
+    </article>
+
+    <article class="venue-highlight">
+      <div class="highlight-icon" aria-hidden="true">♢</div>
+
+      <div>
+        <h2>Safe &amp; Professional</h2>
+        <p>Quality facilities and equipment</p>
+      </div>
+    </article>
+
+    <article class="venue-highlight">
+      <div class="highlight-icon" aria-hidden="true">♕</div>
+
+      <div>
+        <h2>Competitions</h2>
+        <p>Regular shows and leagues</p>
+      </div>
+    </article>
+
+    <article class="venue-highlight">
+      <div class="highlight-icon" aria-hidden="true">○</div>
+
+      <div>
+        <h2>Training</h2>
+        <p>Coaching for all levels</p>
+      </div>
+    </article>
+
+  </div>
+</section>
 
     <section class="quick-links">
       <a href="#events"><strong>Upcoming Events</strong><span>Training shows, leagues and qualifiers</span></a>
