@@ -24,7 +24,17 @@ a { color: var(--burgundy); }
 
 .site-header { position: absolute; z-index: 1000; inset: 0 0 auto; border-bottom: 1px solid rgba(194,155,92,.25); background: linear-gradient(90deg, rgba(41,5,13,.97), rgba(93,22,40,.93), rgba(41,5,13,.97)); }
 .nav-wrap { display: flex; align-items: center; justify-content: space-between; width: min(1440px, calc(100% - 3rem)); min-height: 112px; margin: 0 auto; }
-.site-logo img { display: block; width: auto; height: 84px; object-fit: contain; }
+.site-logo img {
+  display: block;
+  width: auto;
+  height: 110px;
+  object-fit: contain;
+  transition: transform .3s ease;
+}
+
+.site-logo:hover img {
+  transform: scale(1.03);
+}
 .site-nav { display: flex; align-items: center; gap: clamp(1.15rem, 2vw, 2.5rem); }
 .site-nav a { position: relative; color: rgba(255,255,255,.92); font-size: .71rem; font-weight: 700; letter-spacing: .11em; text-decoration: none; text-transform: uppercase; }
 .site-nav a:not(.nav-cta)::after { position: absolute; right: 0; bottom: -10px; left: 0; height: 1px; background: var(--gold); content: ""; transform: scaleX(0); transition: transform .2s ease; }
