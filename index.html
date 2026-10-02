@@ -1,228 +1,819 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kernan Equestrian Centre in Crossmaglen, County Armagh. Showjumping events, coaching and indoor and outdoor arena hire.">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Kernan Equestrian Centre in Crossmaglen, County Armagh. Showjumping events, coaching and indoor and outdoor arena hire."
+  >
+
   <title>Kernan Equestrian Centre</title>
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
-  <header class="site-header" id="top">
-    <div class="nav-wrap">
-      <a class="site-logo" href="#top" aria-label="Kernan Equestrian Centre home">
-        <img src="assets/logo-white.png" alt="Kernan Equestrian Centre">
+
+
+<!-- ======================================================
+     HEADER
+====================================================== -->
+
+<header class="site-header" id="top">
+
+  <div class="nav-wrap">
+
+    <a
+      class="site-logo"
+      href="#top"
+      aria-label="Kernan Equestrian Centre home"
+    >
+      <img
+        src="assets/logo-white.png"
+        alt="Kernan Equestrian Centre"
+      >
+    </a>
+
+
+    <button
+      class="menu-button"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="site-nav"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+
+    <nav
+      class="site-nav"
+      id="site-nav"
+      aria-label="Main navigation"
+    >
+
+      <a href="#top">Home</a>
+      <a href="#events">Events</a>
+      <a href="#arena-hire">Facilities</a>
+      <a href="#centre">The Centre</a>
+      <a href="#james">James Kernan</a>
+      <a href="#contact">Contact</a>
+
+      <a
+        class="nav-cta"
+        href="#contact"
+      >
+        Enquire
       </a>
 
-      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span><span></span>
-      </button>
+    </nav>
 
-      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-        <a href="#top">Home</a>
-        <a href="#events">Events</a>
-        <a href="#arena-hire">Facilities</a>
-        <a href="#centre">The Centre</a>
-        <a href="#james">James Kernan</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-cta" href="#contact">Enquire</a>
-      </nav>
+  </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section
+  class="hero"
+  aria-labelledby="hero-title"
+>
+
+  <div
+    class="hero-bg"
+    aria-hidden="true"
+  ></div>
+
+  <div
+    class="hero-overlay"
+    aria-hidden="true"
+  ></div>
+
+
+  <div class="hero-content">
+
+    <img
+      class="hero-logo"
+      src="assets/logo-white.png"
+      alt=""
+      aria-hidden="true"
+    >
+
+
+    <p class="hero-kicker">
+      Crossmaglen · County Armagh
+    </p>
+
+
+    <h1 id="hero-title">
+      Premium showjumping,<br>
+      training and arena hire
+    </h1>
+
+
+    <div
+      class="hero-rule"
+      aria-hidden="true"
+    >
+      <span></span>
+      <strong>Equestrian Centre</strong>
+      <span></span>
     </div>
-  </header>
 
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="hero-overlay" aria-hidden="true"></div>
 
-      <div class="hero-content">
-        <img class="hero-logo" src="assets/logo-white.png" alt="" aria-hidden="true">
-        <p class="hero-kicker">Crossmaglen · County Armagh</p>
-        <h1 id="hero-title">Premium showjumping,<br>training and arena hire</h1>
-        <div class="hero-rule" aria-hidden="true"><span></span><strong>Equestrian Centre</strong><span></span></div>
-        <p class="hero-copy">A family-run equestrian centre with indoor and outdoor arenas, quality surfaces, competitive showjumping, coaching and private hire.</p>
-        <div class="hero-actions">
-          <a class="button button-gold" href="#events">Upcoming Events</a>
-          <a class="button button-outline" href="#arena-hire">Arena Hire</a>
+    <p class="hero-copy">
+      A family-run equestrian centre with indoor and outdoor arenas,
+      quality surfaces, competitive showjumping, coaching and private hire.
+    </p>
+
+
+    <div class="hero-actions">
+
+      <a
+        class="button button-gold"
+        href="#events"
+      >
+        Upcoming Events
+      </a>
+
+      <a
+        class="button button-outline"
+        href="#arena-hire"
+      >
+        Arena Hire
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     VENUE HIGHLIGHTS
+====================================================== -->
+
+<section
+  class="highlights"
+  id="venue-highlights"
+  aria-label="Venue highlights"
+>
+
+  <div class="highlights-grid">
+
+
+    <article>
+
+      <span class="highlight-icon">◇</span>
+
+      <div>
+        <h2>Premium Facilities</h2>
+        <p>Martin Collins surfaces</p>
+      </div>
+
+    </article>
+
+
+    <article>
+
+      <span class="highlight-icon">♢</span>
+
+      <div>
+        <h2>Safe &amp; Professional</h2>
+        <p>Quality facilities and equipment</p>
+      </div>
+
+    </article>
+
+
+    <article>
+
+      <span class="highlight-icon">♕</span>
+
+      <div>
+        <h2>Competitions</h2>
+        <p>Regular shows and leagues</p>
+      </div>
+
+    </article>
+
+
+    <article>
+
+      <span class="highlight-icon">○</span>
+
+      <div>
+        <h2>Training</h2>
+        <p>Coaching for all levels</p>
+      </div>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     QUICK LINKS
+====================================================== -->
+
+<section
+  class="quick-links"
+  aria-label="Quick links"
+>
+
+  <a href="#events">
+
+    <strong>
+      Upcoming Events
+    </strong>
+
+    <span>
+      Training shows, leagues and qualifiers
+    </span>
+
+  </a>
+
+
+  <a href="#arena-hire">
+
+    <strong>
+      Book an Arena
+    </strong>
+
+    <span>
+      Indoor and outdoor arena hire
+    </span>
+
+  </a>
+
+
+  <a href="#contact">
+
+    <strong>
+      Find Us
+    </strong>
+
+    <span>
+      29 Newry Road, Crossmaglen
+    </span>
+
+  </a>
+
+</section>
+
+
+
+<!-- ======================================================
+     EVENTS
+====================================================== -->
+
+<section
+  class="events-section"
+  id="events"
+>
+
+  <div class="container">
+
+
+    <header class="section-heading centered">
+
+      <p class="eyebrow">
+        <span></span>
+        Upcoming Events
+        <span></span>
+      </p>
+
+      <h2>
+        What’s On at Kernan
+      </h2>
+
+      <p>
+        From training shows to leagues and competitions,
+        there’s always something happening at Kernan
+        Equestrian Centre.
+      </p>
+
+    </header>
+
+
+
+    <div class="events-list">
+
+
+      <!-- =====================
+           EVENT 1
+      ====================== -->
+
+      <article class="event-card">
+
+        <div class="event-date">
+
+          <span class="event-month">
+            OCT
+          </span>
+
+          <strong class="event-day">
+            02
+          </strong>
+
+          <span class="event-year">
+            2026
+          </span>
+
         </div>
-      </div>
-    </section>
-
-    <section class="highlights" id="venue-highlights" aria-label="Venue highlights">
-      <div class="highlights-grid">
-        <article><span class="highlight-icon">◇</span><div><h2>Premium Facilities</h2><p>Martin Collins surfaces</p></div></article>
-        <article><span class="highlight-icon">♢</span><div><h2>Safe &amp; Professional</h2><p>Quality facilities and equipment</p></div></article>
-        <article><span class="highlight-icon">♕</span><div><h2>Competitions</h2><p>Regular shows and leagues</p></div></article>
-        <article><span class="highlight-icon">○</span><div><h2>Training</h2><p>Coaching for all levels</p></div></article>
-      </div>
-    </section>
-
-    <section class="quick-links" aria-label="Quick links">
-      <a href="#events"><strong>Upcoming Events</strong><span>Training shows, leagues and qualifiers</span></a>
-      <a href="#arena-hire"><strong>Book an Arena</strong><span>Indoor and outdoor arena hire</span></a>
-      <a href="#contact"><strong>Find Us</strong><span>29 Newry Road, Crossmaglen</span></a>
-    </section>
-
-    <section class="events-section" id="events">
-      <div class="container">
-        <header class="section-heading centered">
-          <p class="eyebrow"><span></span>Upcoming Events<span></span></p>
-          <h2>What’s On at Kernan</h2>
-          <p>From training shows to leagues and competitions, there’s always something happening at Kernan Equestrian Centre.</p>
-        </header>
-
-<div class="events-list">
-
-  <!-- EVENT 1 -->
-  <article class="event-card">
-
-    <div class="event-date">
-      <span class="event-month">OCT</span>
-      <strong class="event-day">02</strong>
-      <span class="event-year">2026</span>
-    </div>
-
-    <div class="event-information">
-
-      <p class="event-category">Training Show</p>
-
-      <h3>Mackins' H&amp;P Training Show</h3>
-
-      <ul class="event-details">
-        <li>Friday 2nd October</li>
-        <li>Starts at 6pm</li>
-      </ul>
-
-    </div>
-
-  </article>
 
 
-  <!-- EVENT 2 -->
-  <article class="event-card">
+        <div class="event-content">
 
-    <div class="event-date">
-      <span class="event-month">OCT</span>
-      <strong class="event-day">04</strong>
-      <span class="event-year">2026</span>
-    </div>
+          <p class="event-type">
+            Training Show
+          </p>
 
-    <div class="event-information">
+          <h3>
+            Mackins' H&amp;P Training Show
+          </h3>
 
-      <p class="event-category">SJI League Show</p>
+          <ul>
 
-      <h3>Cavan Winter Festival Amateur Qualifier</h3>
+            <li>
+              Friday 2nd October
+            </li>
 
-      <ul class="event-details">
-        <li>Sunday 4th October</li>
-        <li>SJI League Show</li>
-        <li>Includes Amateur Qualifier for Cavan</li>
-        <li>AA's jump first</li>
-      </ul>
+            <li>
+              Starts at 6pm
+            </li>
 
-    </div>
+          </ul>
 
-  </article>
-
-
-  <!-- EVENT 3 -->
-  <article class="event-card">
-
-    <div class="event-date">
-      <span class="event-month">OCT</span>
-      <strong class="event-day">26</strong>
-      <span class="event-year">2026</span>
-    </div>
-
-    <div class="event-information">
-
-      <p class="event-category">Halloween Show</p>
-
-      <h3>Kernan Halloween Show</h3>
-
-      <ul class="event-details">
-        <li>Monday 26th October</li>
-        <li>Starts at 10am</li>
-        <li>Unregistered show for ponies &amp; horses of all levels</li>
-        <li>Classes from crosspoles to 1 metre</li>
-        <li>All entries £18 — entries on the day</li>
-        <li>Fantastic prizes for all classes</li>
-        <li>Spot prizes for best fancy dress in Events 1 &amp; 2</li>
-      </ul>
-
-    </div>
-
-  </article>
-
-</div>
-
-      </div>
-    </section>
-
-    <section class="arena-section" id="arena-hire">
-
-    <section class="arena-section" id="arena-hire">
-      <div class="arena-copy">
-        <p class="eyebrow simple">Facilities</p>
-        <h2>Indoor and outdoor arenas available for hire</h2>
-        <p>Our arenas are available for riding clubs, pony clubs, schooling and coaching. Both arenas have excellent Martin Collins surfaces, with international standard show jumps available for competitions and training.</p>
-        <a class="button button-gold" href="tel:+442830860512">Call to Book</a>
-      </div>
-      <div class="arena-image">
-        <img src="assets/arena.png" alt="Indoor arena at Kernan Equestrian Centre">
-      </div>
-    </section>
-
-    <section class="centre-section" id="centre">
-      <div class="container">
-        <header class="section-heading">
-          <p class="eyebrow simple">The Centre</p>
-          <h2>Built on generations of showjumping experience</h2>
-          <p>Kernan Equestrian Centre opened in its current form in February 2007 and continues a family tradition that began with the original indoor school built in 1967.</p>
-        </header>
-
-        <div class="feature-grid">
-          <article><h3>Indoor Arena</h3><p>Ideal for winter leagues, training shows and coaching sessions.</p></article>
-          <article><h3>Outdoor Arena</h3><p>Silica sand and Martin Collins fibre surface for competitions and schooling.</p></article>
-          <article><h3>Café &amp; Viewing</h3><p>Café open at events with teas, coffees and a limited menu.</p></article>
         </div>
-      </div>
-    </section>
 
-    <section class="profile-section" id="james">
-      <div class="profile-image"><span>James Kernan</span></div>
-      <div class="profile-copy">
-        <p class="eyebrow simple">Profile</p>
-        <h2>James Kernan</h2>
-        <p>James Kernan is a former international and Olympic showjumper from Crossmaglen. He represented Ireland at the Barcelona Olympics in 1992 riding Touchdown and is recognised nationally and internationally as a trainer of show jumpers.</p>
-      </div>
-    </section>
+      </article>
 
-    <section class="contact-section" id="contact">
-      <div class="contact-copy">
-        <p class="eyebrow simple">Contact</p>
-        <h2>Visit Kernan Equestrian Centre</h2>
-        <p>29 Newry Road, Crossmaglen, Newry, BT35 9HH</p>
-        <p><strong>Tel:</strong> <a href="tel:+442830860512">028 3086 0512</a><br>
-        <strong>Mob:</strong> <a href="tel:+353868370376">+353 86 837 0376</a><br>
-        <strong>Email:</strong> <a href="mailto:kernan.james@gmail.com">kernan.james@gmail.com</a></p>
-        <a class="button button-burgundy" href="https://www.google.com/maps/dir/?api=1&destination=54.080579,-6.59626" target="_blank" rel="noopener noreferrer">Get Directions</a>
-      </div>
-      <div class="contact-map">
-        <iframe src="https://www.google.com/maps?q=54.080579,-6.59626&z=15&output=embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="Map showing Kernan Equestrian Centre"></iframe>
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <img src="assets/kernan-logo.png" alt="Kernan Equestrian Centre">
-    <p>© 2026 Kernan Equestrian Centre</p>
-  </footer>
 
-  <script src="script.js"></script>
+      <!-- =====================
+           EVENT 2
+      ====================== -->
+
+      <article class="event-card">
+
+        <div class="event-date">
+
+          <span class="event-month">
+            OCT
+          </span>
+
+          <strong class="event-day">
+            04
+          </strong>
+
+          <span class="event-year">
+            2026
+          </span>
+
+        </div>
+
+
+        <div class="event-content">
+
+          <p class="event-type">
+            SJI League Show
+          </p>
+
+          <h3>
+            Cavan Winter Festival Amateur Qualifier
+          </h3>
+
+          <ul>
+
+            <li>
+              Sunday 4th October
+            </li>
+
+            <li>
+              SJI League Show
+            </li>
+
+            <li>
+              Includes Amateur Qualifier for Cavan
+            </li>
+
+            <li>
+              AA's jump first
+            </li>
+
+          </ul>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =====================
+           EVENT 3
+      ====================== -->
+
+      <article class="event-card">
+
+        <div class="event-date">
+
+          <span class="event-month">
+            OCT
+          </span>
+
+          <strong class="event-day">
+            26
+          </strong>
+
+          <span class="event-year">
+            2026
+          </span>
+
+        </div>
+
+
+        <div class="event-content">
+
+          <p class="event-type">
+            Halloween Show
+          </p>
+
+          <h3>
+            Kernan Halloween Show
+          </h3>
+
+          <ul>
+
+            <li>
+              Monday 26th October
+            </li>
+
+            <li>
+              Starts at 10am
+            </li>
+
+            <li>
+              Unregistered show for ponies &amp; horses of all levels
+            </li>
+
+            <li>
+              Classes from crosspoles to 1 metre
+            </li>
+
+            <li>
+              All entries £18 — entries on the day
+            </li>
+
+            <li>
+              Fantastic prizes for all classes
+            </li>
+
+            <li>
+              Spot prizes for best fancy dress in Events 1 &amp; 2
+            </li>
+
+          </ul>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     ARENA HIRE
+====================================================== -->
+
+<section
+  class="arena-section"
+  id="arena-hire"
+>
+
+
+  <div class="arena-copy">
+
+    <p class="eyebrow simple">
+      Facilities
+    </p>
+
+    <h2>
+      Indoor and outdoor arenas available for hire
+    </h2>
+
+    <p>
+      Our arenas are available for riding clubs, pony clubs,
+      schooling and coaching. Both arenas have excellent
+      Martin Collins surfaces, with international standard
+      show jumps available for competitions and training.
+    </p>
+
+    <a
+      class="button button-gold"
+      href="tel:+442830860512"
+    >
+      Call to Book
+    </a>
+
+  </div>
+
+
+  <div class="arena-image">
+
+    <img
+      src="assets/arena.png"
+      alt="Indoor arena at Kernan Equestrian Centre"
+    >
+
+  </div>
+
+
+</section>
+
+
+
+<!-- ======================================================
+     THE CENTRE
+====================================================== -->
+
+<section
+  class="centre-section"
+  id="centre"
+>
+
+  <div class="container">
+
+
+    <header class="section-heading">
+
+      <p class="eyebrow simple">
+        The Centre
+      </p>
+
+      <h2>
+        Built on generations of showjumping experience
+      </h2>
+
+      <p>
+        Kernan Equestrian Centre opened in its current form
+        in February 2007 and continues a family tradition
+        that began with the original indoor school built
+        in 1967.
+      </p>
+
+    </header>
+
+
+
+    <div class="feature-grid">
+
+
+      <article>
+
+        <h3>
+          Indoor Arena
+        </h3>
+
+        <p>
+          Ideal for winter leagues, training shows
+          and coaching sessions.
+        </p>
+
+      </article>
+
+
+      <article>
+
+        <h3>
+          Outdoor Arena
+        </h3>
+
+        <p>
+          Silica sand and Martin Collins fibre surface
+          for competitions and schooling.
+        </p>
+
+      </article>
+
+
+      <article>
+
+        <h3>
+          Café &amp; Viewing
+        </h3>
+
+        <p>
+          Café open at events with teas, coffees
+          and a limited menu.
+        </p>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     JAMES KERNAN
+====================================================== -->
+
+<section
+  class="profile-section"
+  id="james"
+>
+
+
+  <div class="profile-image">
+
+    <span>
+      James Kernan
+    </span>
+
+  </div>
+
+
+  <div class="profile-copy">
+
+    <p class="eyebrow simple">
+      Profile
+    </p>
+
+    <h2>
+      James Kernan
+    </h2>
+
+    <p>
+      James Kernan is a former international and Olympic
+      showjumper from Crossmaglen. He represented Ireland
+      at the Barcelona Olympics in 1992 riding Touchdown
+      and is recognised nationally and internationally
+      as a trainer of show jumpers.
+    </p>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- ======================================================
+     CONTACT
+====================================================== -->
+
+<section
+  class="contact-section"
+  id="contact"
+>
+
+
+  <div class="contact-copy">
+
+    <p class="eyebrow simple">
+      Contact
+    </p>
+
+    <h2>
+      Visit Kernan Equestrian Centre
+    </h2>
+
+    <p>
+      29 Newry Road,<br>
+      Crossmaglen,<br>
+      Newry,<br>
+      BT35 9HH
+    </p>
+
+
+    <p>
+
+      <strong>Tel:</strong>
+
+      <a href="tel:+442830860512">
+        028 3086 0512
+      </a>
+
+      <br>
+
+
+      <strong>Mob:</strong>
+
+      <a href="tel:+353868370376">
+        +353 86 837 0376
+      </a>
+
+      <br>
+
+
+      <strong>Email:</strong>
+
+      <a href="mailto:kernan.james@gmail.com">
+        kernan.james@gmail.com
+      </a>
+
+    </p>
+
+
+    <a
+      class="button button-burgundy"
+      href="https://www.google.com/maps/dir/?api=1&destination=54.080579,-6.59626"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Get Directions
+    </a>
+
+  </div>
+
+
+
+  <div class="contact-map">
+
+    <iframe
+      src="https://www.google.com/maps?q=54.080579,-6.59626&z=15&output=embed"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Map showing Kernan Equestrian Centre"
+    ></iframe>
+
+  </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer class="site-footer">
+
+  <img
+    src="assets/kernan-logo.png"
+    alt="Kernan Equestrian Centre"
+  >
+
+  <p>
+    © 2026 Kernan Equestrian Centre
+  </p>
+
+</footer>
+
+
+
+<!-- Main JavaScript -->
+<script src="script.js"></script>
+
+
 </body>
 </html>
